@@ -1,41 +1,114 @@
-<!-- App Description -->
-<div id="app-description">
-  <p>
-    Welcome to Trivia Quest, the ultimate trivia game that will put your knowledge to the test! 
-    Challenge yourself with thousands of questions across various categories and climb 
-    the leaderboards to become the Trivia Master.
-  </p>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trivia Quest: Brain Challenge</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    /* Basic Styling */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
 
-<h2>Frequently Asked Questions</h2>
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 40px; 
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
 
-<div class="faq-question">
-  <strong>Q: What are your most important questions?</strong>
-</div>
-<div class="faq-answer">
-  A: Please contact customer service – we will update the FAQs for you soon.
-</div>
+    /* Typography */
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #3498db; 
+      font-size: 3em; 
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+    }
 
-<div class="faq-question">
-  <strong>Q: How do I contact support?</strong>
-</div>
-<div class="faq-answer">
-  A: You can reach our support team by emailing us at <a href="mailto:adamjhon4444@gmail.com">adamjhon4444@gmail.com</a>. We're here to help!
-</div>
+    h2 {
+      color: #2c3e50; 
+      margin-top: 0;
+      margin-bottom: 20px; 
+    }
 
-<!-- Feedback Form -->
-<h2>Feedback</h2>
-<p>Have suggestions or found a bug? Let us know!</p>
+    p {
+      margin-bottom: 15px;
+    }
 
-<form id="feedback-form" action="#" method="post"> 
-  <label for="name">Your Name:</label>
-  <input type="text" id="name" name="name" placeholder="Enter your name">
+    a {
+      color: #e74c3c; 
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
 
-  <label for="email">Your Email:</label>
-  <input type="email" id="email" name="email" placeholder="Enter your email">
+    a:hover {
+      color: #c0392b; 
+    }
 
-  <label for="feedback">Your Feedback:</label>
-  <textarea id="feedback" name="feedback" placeholder="Enter your feedback here"></textarea>
+    /* App Description Styling */
+    #app-description {
+      margin-bottom: 40px; 
+      text-align: center;
+      font-size: 1.1em; 
+    }
 
-  <input type="submit" value="Submit Feedback">
-</form>
+    /* FAQ Styling */
+    .faq-section {
+      margin-bottom: 30px;
+    }
+
+    .faq-question {
+      cursor: pointer;
+      border: none; 
+      padding: 20px; 
+      margin-bottom: 15px;
+      border-radius: 8px;
+      position: relative;
+      background-color: #f9f9f9; 
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+    }
+
+    .faq-question:hover {
+      background-color: #f1f1f1; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    }
+
+    .faq-question::before {
+      content: "\f078";
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #3498db; 
+      font-size: 1.2em; 
+      transition: transform 0.3s ease;
+    }
+
+    .faq-question.active::before {
+      content: "\f077";
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 15px 20px 20px; 
+      border: 1px solid #ddd;
+      border-top: none;
+      border-radius: 0 0 8px 8px;
+      background-color: #fbfbfb;
+    }
+
+    /* Feedback Form Styling */
+    #feedback-form {
+      margin-top: 50px;
+      padding: 3
