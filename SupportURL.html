@@ -6,20 +6,20 @@
     body {
       font-family: sans-serif;
       line-height: 1.6;
+      text-align: center; /* Center all text content */
     }
 
     .container {
       max-width: 800px;
       margin: 0 auto;
-      padding: 20px;
-      text-align: center; 
+      padding: 20px; 
     }
 
+    /* Base button style */
     .nav-button {
       display: inline-block;
       margin: 0 10px; 
       padding: 10px 20px;
-      background-color: #4CAF50; 
       color: white;
       text-decoration: none;
       border: none;
@@ -28,17 +28,20 @@
       transition: background-color 0.3s;
     }
 
+    /* Specific button styles */
     .nav-button:hover {
       background-color: #45a049; 
     }
 
     .button-container {
       margin-top: 30px; 
+      text-align: center; /* Center buttons within the container */
     }
 
     /* Style for FAQ section */
     .faq-section {
       margin-top: 20px;
+      text-align: left; /* Align FAQ content to the left */
     }
 
     .faq-question {
@@ -48,15 +51,29 @@
     .faq-question strong {
       display: block;
       margin-bottom: 5px;
+      text-align: left; /* Align question text to the left */
     }
 
     /* Styles for titles and subtitles */
     h1 { 
-      color: #007BFF; /* Example: Blue color for the main title */
+      color: #007BFF; 
     }
 
     h2 {
-      color: #28A745; /* Example: Green color for subtitles */
+      color: #28A745;
+    }
+
+    /* Different colors for specific links */
+    a[href*="about"] { 
+      background-color: #007BFF; 
+    }
+
+    a[href*="privacy"] { 
+      background-color: #DC3545;
+    }
+
+    a[href*="term"] { 
+      background-color: #FFC107;
     }
   </style>
 </head>
@@ -73,7 +90,24 @@
     </p>
   </div>
 
+  <h2>Frequently Asked Questions</h2>
 
+  <div class="faq-section">
+    <div class="faq-question">
+      <strong>Q: How do I play Trivia Quest: Brain Challenge?</strong>
+      <div class="faq-answer">
+        A: It's easy! Choose a category you're interested in, and we'll present you with challenging multiple-choice questions. Select the answer you think is correct, and see how many you can get right! 
+      </div>
+    </div>
+
+    <div class="faq-question">
+      <strong>Q: What categories are available in the game?</strong>
+      <div class="faq-answer">
+        A: We offer a wide range of categories, including history, science, sports, entertainment, geography, and many more! There's something for everyone.
+      </div>
+    </div>
+
+    <div class="faq-question">
       <strong>Q: Is Trivia Quest: Brain Challenge free to play?</strong>
       <div class="faq-answer">
         A: Yes, the game is free to download and play. You may have the option to make in-app purchases for additional features or content, but they are completely optional.
@@ -90,20 +124,4 @@
     <div class="faq-question">
       <strong>Q: How do I report a bug or issue with the game?</strong>
       <div class="faq-answer">
-        A: You can report any issues directly within the app (usually in a "Settings" or "Help" section), or you can reach our support team by clicking here:  
-        <a href="mailto:adamjhon4444@gmail.com" class="nav-button">Email Us</a>
-      </div>
-    </div>
-  </div> 
-
-  <div class="button-container">
-    <a href="https://pastebin.com/raw/fC1KQ8hy" class="nav-button">About Us</a>
-    <a href="https://pastebin.com/raw/SN7tXN8R" class="nav-button">Terms of Use</a>
-    <a href="https://pastebin.com/raw/bgcw2UcL" class="nav-button" target="_blank">Privacy Policy</a>
-    <a href="https://www.apple.com/app-store/" class="nav-button">Feedback</a> 
-  </div>
-
-</div> 
-
-</body>
-</html>
+        A: You can report
