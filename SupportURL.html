@@ -23,19 +23,17 @@
       border-radius: 8px;
     }
 
-    /* Typography */
     h1 {
       text-align: center;
       margin-bottom: 40px;
-      color: #3498db; 
-      font-size: 3em; 
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+      color: #3498db; /* Blue heading */
+      font-size: 2.5em; /* Larger heading */
     }
 
     h2 {
-      color: #2c3e50; 
+      color: #3498db;
       margin-top: 0;
-      margin-bottom: 20px; 
+      margin-bottom: 20px; /* Added margin */
     }
 
     p {
@@ -43,42 +41,35 @@
     }
 
     a {
-      color: #e74c3c; 
+      color: #e74c3c; /* Red link color */
       text-decoration: none;
       transition: color 0.3s ease;
     }
 
     a:hover {
-      color: #c0392b; 
+      color: #c0392b; /* Darker red on hover */
     }
 
     /* App Description Styling */
     #app-description {
       margin-bottom: 40px; 
       text-align: center;
-      font-size: 1.1em; 
     }
 
     /* FAQ Styling */
-    .faq-section {
-      margin-bottom: 30px;
-    }
-
     .faq-question {
       cursor: pointer;
-      border: none; 
-      padding: 20px; 
-      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      padding: 20px; /* Increased padding */
+      margin-bottom: 15px; /* Increased margin */
       border-radius: 8px;
       position: relative;
-      background-color: #f9f9f9; 
-      transition: background-color 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+      background-color: #f9f9f9; /* Light gray background for questions */
+      transition: background-color 0.3s ease;
     }
 
     .faq-question:hover {
-      background-color: #f1f1f1; 
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+      background-color: #f1f1f1; /* Slightly darker gray on hover */
     }
 
     .faq-question::before {
@@ -89,8 +80,8 @@
       right: 20px;
       top: 50%;
       transform: translateY(-50%);
-      color: #3498db; 
-      font-size: 1.2em; 
+      color: #3498db;
+      font-size: 1.2em; /* Slightly larger icon */
       transition: transform 0.3s ease;
     }
 
@@ -101,14 +92,63 @@
 
     .faq-answer {
       display: none;
-      padding: 15px 20px 20px; 
+      padding: 15px 20px 20px; /* Adjusted padding */
       border: 1px solid #ddd;
       border-top: none;
       border-radius: 0 0 8px 8px;
-      background-color: #fbfbfb;
+      background-color: #fbfbfb; /* Very light gray for answers */
     }
 
     /* Feedback Form Styling */
     #feedback-form {
       margin-top: 50px;
-      padding: 3
+      padding: 30px; /* Increased padding */
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9; /* Light gray background for the form */
+    }
+
+    #feedback-form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    #feedback-form input[type="text"],
+    #feedback-form input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+
+    #feedback-form textarea {
+      width: 100%;
+      height: 150px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+
+    #feedback-form button[type="submit"] {
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #feedback-form button[type="submit"]:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <!-- Rest of the HTML content -->
+</body>
+</html>
