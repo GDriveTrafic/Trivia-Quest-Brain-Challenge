@@ -4,90 +4,109 @@
   <title>Trivia Quest: Brain Challenge</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
-    /* ... previous CSS code ... */
-
-    .faq-answer {
-      display: none;
-      padding: 15px 20px 20px; 
-      border: 1px solid #ddd;
-      border-top: none;
-      border-radius: 0 0 8px 8px;
-      background-color: #fbfbfb;
-      line-height: 1.8; /* Increased line height for better readability */
+    /* Basic Styling */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
     }
 
-    /* Button Styling */
-    .button {
-      display: inline-block;
-      padding: 12px 24px;
-      background-color: #3498db;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 4px;
-      transition: background-color 0.3s ease;
-      font-weight: bold;
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 40px; 
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h1 {
       text-align: center;
-      margin-top: 20px;
+      margin-bottom: 40px;
+      color: #3498db; /* Blue heading */
+      font-size: 2.5em; /* Larger heading */
     }
 
-    .button:hover {
-      background-color: #2980b9;
-    }
-
-    /* Contact Section Styling */
-    #contact {
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    #contact p {
-      margin-bottom: 10px;
-    }
-
-    .social-icons {
-      margin-top: 20px;
-    }
-
-    .social-icons a {
-      display: inline-block;
-      margin: 0 10px;
+    h2 {
       color: #3498db;
-      font-size: 1.5em;
+      margin-top: 0;
+      margin-bottom: 20px; /* Added margin */
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    a {
+      color: #e74c3c; /* Red link color */
+      text-decoration: none;
       transition: color 0.3s ease;
     }
 
-    .social-icons a:hover {
-      color: #2980b9;
+    a:hover {
+      color: #c0392b; /* Darker red on hover */
     }
 
-    /* Footer Styling */
-    footer {
+    /* App Description Styling */
+    #app-description {
+      margin-bottom: 40px; 
       text-align: center;
-      padding: 20px 0;
-      background-color: #f9f9f9;
-      border-top: 1px solid #ddd;
-      margin-top: 40px;
-      font-size: 0.9em;
     }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Trivia Quest: Brain Challenge</h1>
-    <div id="app-description">
-      <p>Welcome to Trivia Quest: Brain Challenge! Test your knowledge and challenge your brain with our exciting trivia app. Explore a wide range of categories, answer questions, and compete with players from around the world. Sharpen your mind and have fun while learning new facts every day!</p>
-    </div>
 
-    <div class="faq-section">
-      <h2>Frequently Asked Questions</h2>
-      <div class="faq-item">
-        <div class="faq-question">How do I start playing Trivia Quest?</div>
-        <div class="faq-answer">To start playing Trivia Quest, simply download our app from the App Store or Google Play Store. Once installed, create an account or log in using your existing credentials. Choose your preferred categories and start answering questions to earn points and climb the leaderboard.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question">What types of questions can I expect in Trivia Quest?</div>
-        <div class="faq-answer">Trivia Quest covers a wide range of categories, including history, science, literature, sports, entertainment, and more. Our questions are carefully curated to provide a challenging and engaging experience for players of all knowledge levels. Expect a mix of multiple-choice and true/false questions.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question">How can I compete with other players in Trivia Quest?</div>
-        <div class="faq-answer">Trivia Quest offers a competitive multiplayer mode where you can challenge other players in real-time battles. You'll be matched with opponents of similar
+    /* FAQ Styling */
+    .faq-question {
+      cursor: pointer;
+      border: 1px solid #ddd;
+      padding: 20px; /* Increased padding */
+      margin-bottom: 15px; /* Increased margin */
+      border-radius: 8px;
+      position: relative;
+      background-color: #f9f9f9; /* Light gray background for questions */
+      transition: background-color 0.3s ease;
+    }
+
+    .faq-question:hover {
+      background-color: #f1f1f1; /* Slightly darker gray on hover */
+    }
+
+    .faq-question::before {
+      content: "\f078";
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #3498db;
+      font-size: 1.2em; /* Slightly larger icon */
+      transition: transform 0.3s ease;
+    }
+
+    .faq-question.active::before {
+      content: "\f077";
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 15px 20px 20px; /* Adjusted padding */
+      border: 1px solid #ddd;
+      border-top: none;
+      border-radius: 0 0 8px 8px;
+      background-color: #fbfbfb; /* Very light gray for answers */
+    }
+
+    /* Feedback Form Styling */
+    #feedback-form {
+      margin-top: 50px;
+      padding: 30px; /* Increased padding */
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9; /* Light gray background for the form */
+    }
+
+    #feedback-form label {
+      display
