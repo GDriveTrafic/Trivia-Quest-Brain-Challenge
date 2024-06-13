@@ -12,10 +12,12 @@
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
+      text-align: center; /* Center the buttons */
     }
 
-    .contact-button {
+    .nav-button {
       display: inline-block;
+      margin: 0 10px; /* Adjust spacing between buttons */
       padding: 10px 20px;
       background-color: #4CAF50; 
       color: white;
@@ -26,7 +28,7 @@
       transition: background-color 0.3s;
     }
 
-    .contact-button:hover {
+    .nav-button:hover {
       background-color: #45a049; 
     }
   </style>
@@ -58,28 +60,31 @@
       <strong>Q: How do I contact support?</strong>
       <div class="faq-answer">
         A: You can reach our support team by clicking here: 
-        <a href="mailto:adamjhon4444@gmail.com" class="contact-button">Email Us</a>
+        <a href="mailto:adamjhon4444@gmail.com" class="nav-button">Email Us</a>
       </div>
     </div>
   </div> 
 
-  <h2>About Us</h2>
-  <p>
-    Learn more about the team behind Trivia Quest and our mission to bring you the best trivia experience. 
-    <!-- Add more content here -->
-  </p>
+  <!-- Navigation Buttons -->
+  <a href="#about" class="nav-button">About Us</a>
+  <a href="#terms" class="nav-button">Terms of Use</a>
+  <a href="#privacy" class="nav-button">Privacy Policy</a>
 
-  <h2>Terms of Use</h2>
-  <p>
-    Please review our terms of service to understand the rules and guidelines for using Trivia Quest.
-    <!-- Add more content or links to full terms here -->
-  </p>
+  <!-- Section Content (Add your actual content here) -->
+  <div id="about">
+    <h2>About Us</h2>
+    <p>Learn more about the team behind Trivia Quest...</p> 
+  </div>
 
-  <h2>Privacy Policy</h2>
-  <p>
-    We are committed to protecting your privacy. Read our privacy policy to learn how we collect, use, and safeguard your information.
-    <!-- Add more content or links to full privacy policy here -->
-  </p>
+  <div id="terms">
+    <h2>Terms of Use</h2>
+    <p>Please review our terms of service...</p>
+  </div>
+
+  <div id="privacy">
+    <h2>Privacy Policy</h2>
+    <p>We are committed to protecting your privacy...</p>
+  </div>
 
 </div> 
 
