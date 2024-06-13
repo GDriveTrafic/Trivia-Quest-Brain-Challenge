@@ -15,11 +15,11 @@
       text-align: center; 
     }
 
+    /* Base button style */
     .nav-button {
       display: inline-block;
       margin: 0 10px; 
       padding: 10px 20px;
-      background-color: #4CAF50; 
       color: white;
       text-decoration: none;
       border: none;
@@ -28,6 +28,7 @@
       transition: background-color 0.3s;
     }
 
+    /* Specific button styles */
     .nav-button:hover {
       background-color: #45a049; 
     }
@@ -52,11 +53,24 @@
 
     /* Styles for titles and subtitles */
     h1 { 
-      color: #007BFF; /* Example: Blue color for the main title */
+      color: #007BFF; 
     }
 
     h2 {
-      color: #28A745; /* Example: Green color for subtitles */
+      color: #28A745;
+    }
+
+    /* Different colors for specific links */
+    a[href*="about"] { /* Targets links containing "about" */
+      background-color: #007BFF; /* Blue */
+    }
+
+    a[href*="privacy"] { /* Targets links containing "privacy" */
+      background-color: #DC3545; /* Red */
+    }
+
+    a[href*="term"] { /* Targets links containing "term" */
+      background-color: #FFC107; /* Yellow */
     }
   </style>
 </head>
