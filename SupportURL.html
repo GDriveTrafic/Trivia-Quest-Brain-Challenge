@@ -6,54 +6,52 @@
     body {
       font-family: sans-serif;
       line-height: 1.6;
-      text-align: center; 
+      text-align: center; /* Center all content by default */
     }
 
     .container {
       max-width: 800px;
       margin: 0 auto;
-      padding: 20px; 
+      padding: 20px;
     }
 
-    /* Base button style */
     .nav-button {
       display: inline-block;
       margin: 0 10px; 
       padding: 10px 20px;
+      background-color: #4CAF50; 
       color: white;
       text-decoration: none;
       border: none;
       border-radius: 5px;
       cursor: pointer;
       transition: background-color 0.3s;
-      background-color: #4CAF50;  /* Default button color */
     }
 
-    /* Specific button styles */
     .nav-button:hover {
       background-color: #45a049; 
     }
 
     .button-container {
       margin-top: 30px; 
-      text-align: center;
+      text-align: center; /* Make sure buttons are centered */
     }
 
     /* Style for FAQ section */
     .faq-section {
       margin-top: 20px;
-      text-align: left;
+      text-align: left; /* Align FAQ content to the left */ 
     }
 
     .faq-question {
       margin-bottom: 20px;
     }
 
-    .faq-question strong { 
+    .faq-question strong {
       display: block;
       margin-bottom: 5px;
-      text-align: left;
-      color: #007BFF; /* Example: Blue color for the question */
+      text-align: left; /* Align question text to the left */
+      color: #007BFF; /* Blue color for the FAQ question */
     }
 
     /* Styles for titles and subtitles */
@@ -62,58 +60,50 @@
     }
 
     h2 {
-      color: #28A745;
-    }
-
-    /* Different colors for specific links */
-    a[href*="about"].nav-button { 
-      background-color: #007BFF; 
-    }
-
-    a[href*="privacy"].nav-button { 
-      background-color: #DC3545;
-    }
-
-    a[href*="term"].nav-button { 
-      background-color: #FFC107;
+      color: #28A745; 
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <h1>Trivia Quest Support</h1>
+<div class="container">
+  <h1>Trivia Quest Support</h1>
 
-    <div id="app-description">
-      <p>
-        Welcome to Trivia Quest, the ultimate trivia game that will put your knowledge to the test! 
-        Challenge yourself with thousands of questions across various categories and climb 
-        the leaderboards to become the Trivia Master.
-      </p>
+  <div id="app-description">
+    <p>
+      Welcome to Trivia Quest, the ultimate trivia game that will put your knowledge to the test! 
+      Challenge yourself with thousands of questions across various categories and climb 
+      the leaderboards to become the Trivia Master.
+    </p>
+  </div>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-section">
+    <div class="faq-question">
+      <strong>Q: What are your most important questions?</strong>
+      <div class="faq-answer">
+        A: Please contact customer service – we will update the FAQs for you soon.
+      </div>
     </div>
 
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-section">
-      <div class="faq-question">
-        <strong>Q: How do I play Trivia Quest: Brain Challenge?</strong>
-        <div class="faq-answer">
-          A: It's easy! Choose a category you're interested in, and we'll present you with challenging multiple-choice questions. Select the answer you think is correct, and see how many you can get right! 
-        </div>
+    <div class="faq-question">
+      <strong>Q: How do I contact support?</strong>
+      <div class="faq-answer">
+        A: You can reach our support team by clicking here: 
+        <a href="mailto:adamjhon4444@gmail.com" class="nav-button">Email Us</a>
       </div>
+    </div>
+  </div> 
 
-      <div class="faq-question">
-        <strong>Q: What categories are available in the game?</strong>
-        <div class="faq-answer">
-          A: We offer a wide range of categories, including history, science, sports, entertainment, geography, and many more! There's something for everyone.
-        </div>
-      </div>
+  <div class="button-container">
+    <a href="https://pastebin.com/raw/fC1KQ8hy" class="nav-button">About Us</a>
+    <a href="https://pastebin.com/raw/SN7tXN8R" class="nav-button">Terms of Use</a>
+    <a href="https://pastebin.com/raw/bgcw2UcL" class="nav-button" target="_blank">Privacy Policy</a>
+    <a href="https://www.apple.com/app-store/" class="nav-button">Feedback</a> 
+  </div>
 
-      <div class="faq-question">
-        <strong>Q: Is Trivia Quest: Brain Challenge free to play?</strong>
-        <div class="faq-answer">
-          A: Yes, the game is free to download and play. You may have the option to make in-app purchases for additional features or content, but they are completely optional.
-        </div>
-      </div>
+</div> 
 
-      <div class="faq-question">
-        <strong>Q: Do I need an
+</body>
+</html>
